@@ -42,6 +42,7 @@ def upload_image(
     return upload_user_image(image_file, user["id"])
 
 
+
 @router.get("/{book_id}")
 def get_book_by_id_route(book_id: int, user=Depends(get_user)):
     book = get_book_by_id(book_id)
